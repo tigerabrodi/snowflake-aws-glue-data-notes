@@ -55,3 +55,33 @@ Snowflake allows for seamless and secure sharing of live data with other Snowfla
 Snowflake enables creating full copies of databases, schemas, or tables quickly and without additional storage costs. These clones are useful for development, testing, or recovery.
 
 This feature allows users to access historical data (up to 90 days), enabling them to restore data to any point within the specified period or analyze historical data.
+
+# Massive Parallel Processing (MPP)
+
+Massive Parallel Processing (MPP) in data engineering is a way to process huge amounts of data by dividing the work across many different processors (or computers) working at the same time. Think of it like a large team of people working on a big project, with each person handling a small part of the project at the same time.
+
+## How does it work?
+
+**Dividing the Data:** In MPP, the large dataset is divided into smaller chunks. Each chunk is processed by a different processor.
+
+**Processing in Parallel:** Instead of one computer working on the entire dataset (which can be slow), multiple computers (or processors) work on different parts of the data at the same time. This is like having many chefs in a kitchen, each preparing a different dish simultaneously, rather than one chef preparing all dishes one after the other.
+
+**Combining Results:** After each processor completes its task, the results from all processors are combined to form the final output.
+
+## Key Concepts
+
+- It uses a shared-nothing architecture.
+- Processors work on separate parts of a task.
+- Each processor has its own storage.
+- Data and computation are partitioned across multiple nodes (servers), with a leader node coordinating the work.
+- It’s scalable by adding more nodes, enhancing performance and handling more users and queries.
+- MPP systems typically have high data compression capabilities.
+- Processors communicate via a messaging interface.
+
+## Advantages
+
+- Performance improves with more nodes, speeding up computations.
+- Scalable to handle larger data volumes by adding nodes.
+- Cost-effective as it allows for the use of less expensive hardware.
+- No single point of failure; if one node fails, others continue working.
+- Easily expandable by adding more nodes
