@@ -34,6 +34,18 @@ Snowflake's architecture is a significant departure from traditional shared-disk
 
 **Cloud Services Layer:** This is the brain of the Snowflake environment. It manages tasks like authentication, infrastructure management, metadata management, query compilation and optimization, and access control.
 
+## Virtual warehouses
+
+Think of a virtual warehouse in Snowflake as a powerful computer in the cloud that's dedicated to processing your data. It's not a physical warehouse but a virtual one, where all the heavy lifting of analyzing and querying your data happens.
+
+### Key Concepts
+
+- **Separate From Storage:** In Snowflake, the place where your data is stored (data warehouse) is separate from the place where it's processed (virtual warehouse). This means you can use as much or as little processing power as you need, without affecting your data storage.
+- **Scalable:** You can adjust the size of a virtual warehouse to make it more powerful (for faster processing) or less powerful (to save costs) depending on your needs at any given time. It's like having a computer that you can make more powerful or less powerful as needed.
+- **Concurrent Usage:** Multiple virtual warehouses can operate at the same time without affecting each other. This is like having several computers, each dedicated to different tasks, so they don't slow each other down.
+- **Pay for What You Use:** With virtual warehouses, you only pay for the processing power when you're using it. If the virtual warehouse is turned off, you're not charged for compute resources.
+- **Elasticity:** You can turn virtual warehouses on and off as needed. This means you can scale up or down as needed, and you only pay for the processing power when you're using it.
+
 ## Data sharing
 
 Snowflake allows for seamless and secure sharing of live data with other Snowflake users. This is done without copying or moving the data, making it a highly efficient process.
