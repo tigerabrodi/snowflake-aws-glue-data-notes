@@ -56,6 +56,14 @@ Snowflake enables creating full copies of databases, schemas, or tables quickly 
 
 This feature allows users to access historical data (up to 90 days), enabling them to restore data to any point within the specified period or analyze historical data.
 
+## Account Identifiers
+
+The account identifier in Snowflake is a unique identifier that is used to identify a Snowflake account within an organization and throughout the global network of Snowflake-supported cloud services. It includes the name of the account along with its organization and is used in various contexts such as URLs for accessing Snowflake web interfaces, connecting to Snowflake using drivers, connectors, and other clients, and in 3rd-party applications that are part of the Snowflake ecosystem.
+
+## Organizations
+
+An organization in Snowflake is a first-class object that links the accounts owned by a business entity. It simplifies account management, billing, replication, failover/failback, secure data sharing, and other account administration tasks. Organizations allow administrators to view, create, and manage all accounts across different regions and cloud platforms.
+
 # Massive Parallel Processing (MPP)
 
 Massive Parallel Processing (MPP) in data engineering is a way to process huge amounts of data by dividing the work across many different processors (or computers) working at the same time. Think of it like a large team of people working on a big project, with each person handling a small part of the project at the same time.
