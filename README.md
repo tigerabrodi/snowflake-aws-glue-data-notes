@@ -93,3 +93,29 @@ Massive Parallel Processing (MPP) in data engineering is a way to process huge a
 - Cost-effective as it allows for the use of less expensive hardware.
 - No single point of failure; if one node fails, others continue working.
 - Easily expandable by adding more nodes
+
+# Batch Processing and Streaming simplified
+
+Batch processing involves analyzing and handling a large volume of data all at once, typically at scheduled intervals.
+
+On the other hand, stream processing involves continuously processing data in real time as it arrives.
+
+The main difference lies in the approach to data processing: batch processing deals with static, finite data, while stream processing handles dynamic, infinite data in real time.
+
+Batch processing is like preparing a week's worth of meals in advance, while stream processing is akin to cooking and serving meals as soon as the ingredients are available.
+
+# Batch Processing
+
+Batch processing is a method of processing large volumes of data or transactions as a single unit, rather than processing them individually in real-time. It is a popular and widely used method for tasks such as payroll processing, billing and invoicing, and data processing for reporting and analysis. Batch processing is often used for tasks that do not require immediate processing and can be scheduled to run at specific times, such as overnight.
+
+- **Data Collection:** In batch processing, data is gathered and stored over a set period. This could be anything from minutes to days, depending on the application and requirements.
+
+**Processing:** Once enough data has been collected, or at a scheduled time, the data is processed as a single batch. This processing can involve computations, data analysis, transformations, or other types of data manipulation.
+
+**Execution Environment:** Batch jobs often run on servers where resources can be dedicated to processing these large volumes of data without user interaction.
+
+**Scheduling:** Batch processes are typically scheduled to run during off-peak hours to minimize the impact on system performance.
+
+**Error Handling:** A key aspect of batch processing is error handling. Since the processing is done on large data sets, identifying and correcting errors can be more challenging.
+
+# Streaming
