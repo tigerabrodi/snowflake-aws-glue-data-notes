@@ -119,3 +119,13 @@ Batch processing is a method of processing large volumes of data or transactions
 **Error Handling:** A key aspect of batch processing is error handling. Since the processing is done on large data sets, identifying and correcting errors can be more challenging.
 
 # Streaming
+
+**Continuous Data Flow:** Streaming deals with data that is continuously generated, often from multiple sources. This could include everything from social media feeds to sensor data in IoT (Internet of Things) devices.
+
+**Real-Time Processing:** The key feature of streaming is its real-time nature. As soon as data is received, it is processed. This allows for immediate insights and actions, which is crucial in many applications.
+
+**State Management:** Streaming systems often need to maintain state – a sort of memory of what has happened in the past – to make sense of incoming data. This can be challenging due to the unbounded nature of the data stream.
+
+**Windowing:** To manage continuous streams, data is often processed in windows (e.g., analyzing data from the last 5 minutes). This helps in creating manageable segments for analysis.
+
+**Scalability and Fault Tolerance:** Streaming systems must be scalable to handle varying loads of data and resilient to prevent data loss or interruptions in processing.
