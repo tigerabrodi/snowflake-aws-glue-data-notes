@@ -129,3 +129,37 @@ Batch processing is a method of processing large volumes of data or transactions
 **Windowing:** To manage continuous streams, data is often processed in windows (e.g., analyzing data from the last 5 minutes). This helps in creating manageable segments for analysis.
 
 **Scalability and Fault Tolerance:** Streaming systems must be scalable to handle varying loads of data and resilient to prevent data loss or interruptions in processing.
+
+# AWS Glue
+
+AWS Glue is a fully managed extract, transform, and load (ETL) service offered by Amazon Web Services. It enables the easy preparation and loading of your data for analytics.
+
+## Problem it solves
+
+- **Data Silos:** Breaks down data silos by connecting to various data sources, simplifying data integration.
+- **ETL Complexity:** Reduces the complexity of ETL processes by automating much of the labor-intensive scripting required for data transformation.
+- **Scalability Issues:** AWS Glue is serverless, automatically scaling ETL operations to match the size and complexity of your data.
+- **Maintenance Overhead:** Being a fully managed service, it eliminates the need for infrastructure management.
+
+## Glue Data Catalog
+
+- It's a centralized metadata repository.
+- Stores information about data sources, transformations, and targets.
+- Acts as a persistent metadata store for all your data assets, making them easily discoverable and manageable.
+
+## Crawler
+
+- Crawlers in AWS Glue are used to scan various data sources.
+- They automatically infer schema and data types and populate the Glue Data Catalog with metadata.
+- Useful for keeping the data catalog up-to-date as data evolves.
+
+## ETL Jobs
+
+- These are the core of AWS Glue's functionality.
+- They are tasks that extract data from a source, transform it, and then load it into a target data store.
+- Can be triggered on a schedule or in response to an event.
+
+## Transformations
+
+- AWS Glue supports various built-in transformations (like map, filter, join) to cleanse, enrich, and reformat data.
+- Custom scripts can also be written in Python or Scala.
